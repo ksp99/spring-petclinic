@@ -1,9 +1,9 @@
 pipeline {
-    agent { label 'OPENJDK-17' }
+    agent { label 'jdk-17' }
     stages {
         stage('vcs') {
             steps {
-                git url: 'https://github.com/seshasaimatla/spring-petclinic.git', branch: 'main' 
+                git url: '', branch: 'main' 
             }
         }
         stage('build') {
