@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('vcs') {
             steps {
-                git url: '', branch: 'main' 
+                git url: 'https://github.com/ksp99/spring-petclinic.git', branch: 'main' 
             }
         }
         stage('build') {
